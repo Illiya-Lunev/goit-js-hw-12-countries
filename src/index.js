@@ -18,7 +18,7 @@ const onInput = e => {
   const inputValue = e.target.value;
 
   if (inputValue) {
-    fetchCountries(inputValue.trim())
+    fetchCountries(inputValue)
       .then(data => markup(data))
       .catch(error => console.log('error'));
   }
