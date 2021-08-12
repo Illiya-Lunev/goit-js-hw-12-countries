@@ -23,5 +23,4 @@ const onInput = e => {
       .catch(error => console.log('error'));
   }
 };
-
 ref.input.addEventListener('input', debounce(onInput, 500));
