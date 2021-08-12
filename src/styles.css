@@ -42,8 +42,11 @@
   margin-bottom: 15px;
 }
 
-.countries_name {
-  font-size: 40px;
+.countries_name,
+.countries_capital,
+.countries_population,
+.countries-lang {
+  font-size: 30px;
   text-shadow: #cccccc -17px -8px 6px;
   color: rgb(179, 93, 93);
 }
