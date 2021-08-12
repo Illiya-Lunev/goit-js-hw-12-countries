@@ -9,15 +9,8 @@ const ref = { containerCountry: document.querySelector('.js-countries') };
 
 function markup(data) {
   const markupCard = countryCard(data);
-  if (!data.length) {
-    error({
-      text: `Please enter a more specific query!`,
-      styling: 'brighttheme',
-      delay: 500,
-    });
-    return;
-  }
-  if (data && data.length >= 3) {
+
+  if (data.length >= 3) {
     error({
       title: `Too many matches found.`,
       text: `We found ${data.length} countries. Please enter a more specific query!`,
