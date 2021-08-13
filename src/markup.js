@@ -20,7 +20,8 @@ function markup(data) {
   }
   if (data.length >= 2 && data.length <= 10) {
     return data.forEach(
-      country => (ref.containerCountry.innerHTML += `<li>${country.name}</li>`),
+      country =>
+        (ref.containerCountry.innerHTML += `<div class = "item"><li>${country.name}</li></div>`),
     );
   }
   if (data.length === 1) {
